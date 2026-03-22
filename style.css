@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+    color: var(--primary-color);
+}
+
+:root {
+    --futuro-font-family: "Overpass Mono";
+    --weight-font-main: 500;
+    --primary-color: #fff;
+    --secondary-color: #9D4EDD;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.elipse {
+    position: absolute;
+    border-radius: 50%;
+    width: 1360px;
+    height: 1360px;
+    left: -750px;
+    top: -168px;
+    background: radial-gradient(ellipse at center, #552A77 0%, rgba(157, 78, 221, 0) 70%);
+
+}
+
+
+.cabecalho {
+    display: flex;
+    margin: 31px 40px;
+    align-items: center;
+    max-width: fit-content;
+    justify-self: center;
+    justify-content: space-between;
+    gap: 150px;
+    position: relative;
+
+    & img {
+        width: 135px;
+        height: 40px;
+    }
+
+    & a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: var(--weight-font-main);
+        white-space: nowrap;
+    }
+
+
+    .links {
+        display: flex;
+        border: 1px rgba(255, 255, 255, 30%) solid;
+        border-radius: 70px;
+        padding: 12px 18px;
+        min-width: max-content;
+        gap: 87px;
+
+        & .home {
+            color: #000;
+            background-color: var(--primary-color);
+            border-radius: 30px;
+            padding: 4px 16px;
+        }
+    }
+
+    & .registro {
+        background-color: var(--secondary-color);
+        border-radius: 30px;
+        padding: 14px 22px;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px;
+}
+
+.chamada {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    position: relative;
+    margin-left: 99px;
+    margin-top: 125px;
+    margin-bottom: 148px;
+    flex: 1;
+
+}
+
+.texto-principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: var(--weight-font-main);
+
+}
+
+.bait {
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 30%);
+    max-width: fit-content;
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.titulo {
+
+    & b {
+        color: var(--secondary-color);
+        font-family: "Overpass Mono";
+    }
+
+
+    & .entre {
+        font-size: 80px;
+        height: 84px;
+    }
+
+    & .futuro {
+        font-family: "Overpass Mono";
+        font-size: 136px;
+        height: 172px;
+    }
+
+    & .descricao {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 70%);
+        max-width: 484px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+
+    & a {
+        font-size: 22px;
+        gap: 10px;
+        padding: 14px 22px;
+        border-radius: 30px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+    & .btn1 {
+        background-color: var(--secondary-color);
+    }
+
+    & .btn2 {
+        border: 1px solid rgba(255, 255, 255, 30%);
+    }
+}
+
+.linha-divisoria {
+    border: 1px solid rgba(255, 255, 255, 30%);
+    width: 530px;
+}
+
+.users {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    & .texto {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        & .txt1 {
+            font-size: 64px;
+            font-weight: 600;
+            height: 81px;
+        }
+
+        & .txt2 {
+            font-size: 24px;
+            font-weight: 400;
+            height: 30px;
+        }
+
+    }
+
+    & img {
+        width: 218px;
+        height: 91px;
+    }
+
+}
+
+.hero-animacao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    & .animacao {
+        width: 762px;
+        height: 762px;
+    }
+}
